@@ -2,8 +2,11 @@ class Cliamp < Formula
   desc "A retro terminal music player inspired by Winamp 2.x"
   homepage "https://github.com/bjarneo/cliamp"
 
+  head "https://github.com/bjarneo/cliamp.git", branch: "main"
+
   depends_on "ffmpeg" => :recommended
   depends_on "yt-dlp" => :recommended
+  depends_on "go" => :build
   version "1.13.3"
 
   on_macos do
@@ -29,8 +32,14 @@ class Cliamp < Formula
   end
 
   def install
-    binary = Dir["cliamp-*"].first
-    bin.install binary => "cliamp"
+    if build.head?
+      # Build from source for HEAD
+      system "go", "build", "-ldflags", "-s -w", "-o", bin/"cliamp", "."
+    else
+      # Use pre-built binary for stable releases
+      binary = Dir["cliamp-*"].first
+      bin.install binary => "cliamp"
+    end
   end
 
   test do
