@@ -2,7 +2,6 @@ class Cliamp < Formula
   desc "A retro terminal music player inspired by Winamp 2.x"
   homepage "https://github.com/bjarneo/cliamp"
 
-  url "https://github.com/bjarneo/cliamp/releases/download/v1.13.3/cliamp-darwin-arm64", tag: "v1.13.3"
   head "https://github.com/bjarneo/cliamp.git", branch: "main"
 
   depends_on "ffmpeg" => :recommended
