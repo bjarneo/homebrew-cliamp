@@ -10,27 +10,27 @@ class Cliamp < Formula
   depends_on "ffmpeg" => :recommended
   depends_on "yt-dlp" => :recommended
   depends_on "go" => :build
-  version "1.18.4"
+  version "1.19.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.18.4/cliamp-darwin-arm64"
-      sha256 "bad192008e0327ea3432fff4d5b2fe9f840449d81b744bbc8b601ac335c75c7b"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.19.0/cliamp-darwin-arm64"
+      sha256 "c3a5113e4d2d338ce7d004280b7a1e71a804f78e711d05aef1d3a5c72118015d"
     end
     on_intel do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.18.4/cliamp-darwin-amd64"
-      sha256 "304610cf7bb69e59d92f82b43d84898848775666d9ae48b36e9daf5d9d1d6855"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.19.0/cliamp-darwin-amd64"
+      sha256 "080b07d3dfff3284465a2064efc08b3ac6f18db3f2fc23683cbd27ce05d073d3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.18.4/cliamp-linux-arm64"
-      sha256 "2a436b863ef49a44b664cd43fdfb9d34528d34e3d47d11c69377d04616f5c6ea"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.19.0/cliamp-linux-arm64"
+      sha256 "b69cd46113f4f5faa6af8ea7195c80980b6f9b134ce32a3822682fcf43fd8364"
     end
     on_intel do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.18.4/cliamp-linux-amd64"
-      sha256 "052c61fe8f2c760b78eb71cb328403666330c3bcf9465a82be62b3a79c1a3503"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.19.0/cliamp-linux-amd64"
+      sha256 "0f848a85bdeaf88b394993d8bd01cb4387996094afb2bd288738776f8973ab2b"
     end
   end
 
