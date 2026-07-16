@@ -10,37 +10,37 @@ class Cliamp < Formula
   depends_on "ffmpeg" => :recommended
   depends_on "yt-dlp" => :recommended
   depends_on "go" => :build
-  version "1.57.1"
+  version "1.57.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.1/cliamp-darwin-arm64"
-      sha256 "8117560da270c70cb604a7b2c86417d17e50b30136055054a7cee6579e74841c"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-darwin-arm64"
+      sha256 "14d43cec0122f93cbc804d4cdd250f87b6650063d4e7d49bc290772c84bb9713"
     end
     on_intel do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.1/cliamp-darwin-amd64"
-      sha256 "1cbdddd100300ab2b60a9f57cac8d93e6f84f1d4d9f667d9f39c1fb01ced75ed"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-darwin-amd64"
+      sha256 "f35030f32ed79c8802d36a017aaacb17eb726ef1f92e699362d1208d807ab69b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.1/cliamp-linux-arm64"
-      sha256 "e4b3f4ed7244a0561c476fbcf2f505be2d2e13869ae0c5debb5bb1602172700e"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-linux-arm64"
+      sha256 "a32674bee375c1dc7357f2597c60b0ed21a5837d49c929eed768945356e360dd"
     end
     on_intel do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.1/cliamp-linux-amd64"
-      sha256 "9d81330bfc978d3b4e5cd573b8617bc828e2dbfbca3eebc03bec30ff83dc3c28"
+      url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-linux-amd64"
+      sha256 "1d5620a58a1fd5251cf65b369dc0df164f091ff8c8de39831c120613d581a405"
     end
   end
 
   resource "icon" do
-    url "https://raw.githubusercontent.com/bjarneo/cliamp/v1.57.1/Cliamp.png"
+    url "https://raw.githubusercontent.com/bjarneo/cliamp/v1.57.2/Cliamp.png"
     sha256 "8b68d5696b993879188c401843472ee53335ad6710be11944d0fe43bbd8e4787"
   end
 
   resource "desktop" do
-    url "https://raw.githubusercontent.com/bjarneo/cliamp/v1.57.1/cliamp.desktop"
+    url "https://raw.githubusercontent.com/bjarneo/cliamp/v1.57.2/cliamp.desktop"
     sha256 "3e2af63bbd6ddfbee31f2312a82d39d56bb332d209f2593450a4c93194386ebe"
   end
 
