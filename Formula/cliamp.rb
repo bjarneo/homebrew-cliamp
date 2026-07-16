@@ -15,22 +15,22 @@ class Cliamp < Formula
   on_macos do
     on_arm do
       url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-darwin-arm64"
-      sha256 "14d43cec0122f93cbc804d4cdd250f87b6650063d4e7d49bc290772c84bb9713"
+      sha256 "97dbe7db2059fe62ae55c8a354702cf26b5636a780aaf6a5dab9f9e216493b4a"
     end
     on_intel do
       url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-darwin-amd64"
-      sha256 "f35030f32ed79c8802d36a017aaacb17eb726ef1f92e699362d1208d807ab69b"
+      sha256 "b0e2bae0e4e975f70e557b8a9a91e15d00d5a84058db0adbe02ff7fab2f8f01a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-linux-arm64"
-      sha256 "a32674bee375c1dc7357f2597c60b0ed21a5837d49c929eed768945356e360dd"
+      sha256 "7c00f1416835322875018463a4b197d11f4f418fc3e6abc6e47ad4a81495b8d2"
     end
     on_intel do
       url "https://github.com/bjarneo/cliamp/releases/download/v1.57.2/cliamp-linux-amd64"
-      sha256 "1d5620a58a1fd5251cf65b369dc0df164f091ff8c8de39831c120613d581a405"
+      sha256 "a595143c3fc4ce9c243e794f9df1f30501c948cc38d0a01ec3ce888e53e1a5c7"
     end
   end
 
