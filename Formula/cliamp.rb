@@ -2,45 +2,48 @@ class Cliamp < Formula
   desc "A retro terminal music player inspired by Winamp 2.x"
   homepage "https://github.com/bjarneo/cliamp"
 
-  head "https://github.com/bjarneo/cliamp.git", branch: "main"
+  head do
+    url "https://github.com/bjarneo/cliamp.git", branch: "main"
+    depends_on "go" => :build
+  end
 
   depends_on "flac"
   depends_on "libvorbis"
   depends_on "libogg"
+  depends_on "mpg123"
   depends_on "ffmpeg" => :recommended
   depends_on "yt-dlp" => :recommended
-  depends_on "go" => :build
-  version "1.63.2"
+  version "2.0.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.63.2/cliamp-darwin-arm64"
-      sha256 "e9786bcedb5c284a6c15b8d472b846e67e321ab9e95b688ef999de24baec6074"
+      url "https://github.com/bjarneo/cliamp/releases/download/v2.0.0/cliamp-darwin-arm64"
+      sha256 "4ce68a5910a1e554fa49dfca83974045618dd6d3f9bd3d325baab8ee55fdca29"
     end
     on_intel do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.63.2/cliamp-darwin-amd64"
-      sha256 "e8595ba960be284cf6ab21a3dd34537a8ddca4fca4fd253f057e02379f608276"
+      url "https://github.com/bjarneo/cliamp/releases/download/v2.0.0/cliamp-darwin-amd64"
+      sha256 "703ae63d0d706da6dd3e8fee8bb12a70aeb53a994f5932e6baa0d0be7a4bcab0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.63.2/cliamp-linux-arm64"
-      sha256 "3be4ebe8806d2432b58afedd0fbdcb9522266b0204ab6cddb7f519f6ee33a8aa"
+      url "https://github.com/bjarneo/cliamp/releases/download/v2.0.0/cliamp-linux-arm64"
+      sha256 "0b80cd9410ed5b7732eaa0ac0313df92368aa25c9f4055c991f1125a0c2808d2"
     end
     on_intel do
-      url "https://github.com/bjarneo/cliamp/releases/download/v1.63.2/cliamp-linux-amd64"
-      sha256 "b066832c84cb9dffcb126252dedb55a0ebcd13cbac95bbff103b111b88ce17c9"
+      url "https://github.com/bjarneo/cliamp/releases/download/v2.0.0/cliamp-linux-amd64"
+      sha256 "b63817dac0405a0976fedbcdd8c635a6e05522c05b4da9e14f5b33b799c26ba2"
     end
   end
 
   resource "icon" do
-    url "https://raw.githubusercontent.com/bjarneo/cliamp/v1.63.2/Cliamp.png"
-    sha256 "8b68d5696b993879188c401843472ee53335ad6710be11944d0fe43bbd8e4787"
+    url "https://raw.githubusercontent.com/bjarneo/cliamp/v2.0.0/Cliamp.png"
+    sha256 "4f405d464869d13f49bac8cfbd0839e447b111180ab37e8585337966d57c0011"
   end
 
   resource "desktop" do
-    url "https://raw.githubusercontent.com/bjarneo/cliamp/v1.63.2/cliamp.desktop"
+    url "https://raw.githubusercontent.com/bjarneo/cliamp/v2.0.0/cliamp.desktop"
     sha256 "3e2af63bbd6ddfbee31f2312a82d39d56bb332d209f2593450a4c93194386ebe"
   end
 
